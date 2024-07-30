@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pay</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+   
+
+
+    <section class="container my-md-5 ">
+      <div class="row g-3">
+        <div class="col-lg-8">
+          <div class="negative-row-margin mx-lg-0">
+            <div class="p-5 bg-primary text-primary-lighter">
+              <div class="row mb-5">
+                <div class="col-6">
+                  <h1 class="text-primary-lighter">付款</h1>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                  <div class="process-steps w-100">
+                    <div class="step-circle material-symbols-outlined completed">check</div>
+                    <div class="step-circle material-symbols-outlined-circle active"></div>
+                    <div class="step-circle material-symbols-outlined"></div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label class="h4" for="credit">信用卡卡號</label>
+                    <div class="input-group">
+                    <input type="text" class="form-control lastname " id="credit" placeholder="9012-3456-7890-1234" aria-describedby="basic-addon1">
+                    <span class="input-icon material-symbols-outlined" id="basic-addon1">credit_card</span>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="mb-3">
+                      <label class="h4" for="firstname">持卡人姓名</label>
+                      <input type="text" class="form-control lastname" id="firstname" placeholder="王">
+                     </div>
+                  </div>
+                  <div class="col-6">
+                  <div class="mb-3">
+                    <label class="h4 name-none" for="firstname">名字</label>
+                    <input type="text" class="form-control lastname" id="firstname" placeholder="小明">
+                  </div>
+                </div>
+              </div>
+            </div>
+       </div>
+
+              <label class="h4" for="city">有效日期</label>
+              <div class="row">
+                <div class="col-6">
+                  <div class="mb-3">
+                    <select name="" id="validity-period-month" class=" lastname form-control ">
+                      <option value="1">Mar</option>
+                      <option value="2">Jul</option>
+                      <option value="3">Sep</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="mb-3">
+                    <select name="" id="validity-period-year"  class="lastname form-control ">
+                      <option value="1">2024</option>
+                      <option value="2">2025</option>
+                      <option value="3">2026</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="mb-3">
+                    <label class="h4" for="firstname">背面末三碼</label>
+                    <input type="text" class="form-control lastname" id="firstname" placeholder="123">
+                   </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+
+          <div class="d-grid negative-row-margin mx-lg-0">
+            <a href="receipt.html" class="btn btn-accent py-3 text-primary">下一步</a>
+          </div>
+        </div>
+
+
+
+        <div class="col-lg-4 d-none d-lg-block">
+          <div class="card border-primary-lighter mb-3">
+            <h4 class="card-header text-primary-light text-center bg-primary-lighter border-primary-lighter py-4">訂單摘要</h4>
+            <div class="card-body text-primary-light">
+              <div class="d-flex justify-content-between mb-2">
+                <span>小計</span>
+                <span>NT$ 2,700</span>
+              </div>
+              <div class="d-flex justify-content-between mb-3 ">
+                <span>運費</span>
+                <span>NT$ 300</span>
+              </div>
+              <div class="d-flex justify-content-between">
+                <span  class="heavy600">總計</span>
+                <span  class="heavy600">NT$ 3000</span>
+              </div>
+            </div>
+          </div>
+          <div class="card border-primary-lighter">
+            <h4 class="card-header text-primary-light text-center bg-primary-lighter border-primary-lighter py-4">購物清單</h4>
+            <div class="card-body carts">
+
+              <div class="d-flex mb-3">
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/images/草莓優格.avif)"></div>
+                <div class="d-flex flex-fill  align-items-center justify-content-evenly">
+                  <div class=" text-primary-light">
+                    <span>焦糖馬卡龍 (2)</span><br>
+                    <span class="heavy600">NT$ 900</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex mb-3">
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/images/草莓蛋糕.avif)"></div>
+                <div class="d-flex flex-fill  align-items-center justify-content-evenly">
+                  <div class=" text-primary-light">
+                    <span>焦糖馬卡龍 (2)</span><br>
+                    <span class="heavy600">NT$ 900</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/images/藍莓派.avif)"></div>
+                <div class="d-flex flex-fill  align-items-center justify-content-evenly">
+                  <div class=" text-primary-light">
+                    <span>焦糖馬卡龍 (2)</span><br>
+                    <span class="heavy600">NT$ 900</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

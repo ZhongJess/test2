@@ -1,0 +1,171 @@
+// .footer{
+
+//   background-color: #3F5D45;
+//   flex-wrap: wrap;
+
+
+//   .footer1{
+//     padding-top: 38px;
+//     padding-bottom: 38px;
+//     color: $light;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//   }
+
+//   .footer1 h4 {
+//     margin-top: 0px;
+//     margin-bottom: 0px;
+//     margin-left: 20px;
+//   }
+
+
+
+//   .container2 {
+//     max-width: 780px;
+//     margin: 0 auto;
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//   }
+
+//   .container3 {
+//     max-width: 780px;
+//     margin: 0 auto;
+//     flex-wrap: wrap;
+//   }
+
+
+//   .input-group {
+//     display: flex;
+//     background-color: #EAF0ED;
+//     overflow: hidden;
+//     align-content: center;
+//     margin-top: 30px;
+//   }
+  
+//   .form-control {
+//     border: none;
+//     background-color: transparent;
+//     padding-left: 40px;
+//     padding-right: 101px;
+//   }
+  
+//   .btn {
+//     background-color:#FFE180;
+//     border: none;
+//     display: flex;
+//     align-self:center;
+//     padding: 16px 20px;
+//     border-radius: 0px;
+
+//   }
+  
+
+//   .input-group {
+//     position: relative;
+
+//   }
+
+//   .mail-svg {
+//       color: #3F5D45;
+//       position: absolute;
+//       top: 16px;
+//       left: 20px;
+//   }
+
+
+//   .footer-bottom {
+//     background-color: #EAF0ED;
+//   }
+
+
+
+
+
+//   .today {
+//     margin-left:auto;
+//     margin-bottom: 30px;
+  
+//   }
+
+
+//   .pt-6 {
+//     padding-top: 30px;
+//   }
+
+
+
+.list-unstyled{
+  margin-top: 39px;
+  margin-bottom: 0px;
+  color: #3F5D45;
+}
+
+
+
+//   .social{
+//     margin-bottom: 30px;
+//   }
+
+//   .text-color{
+//     color: #3F5D45;
+//   }
+// }
+
+
+
+.form-square {
+  background-color: $primary-200;
+  
+  &.form-square-withicon {
+    padding-left: 60px;
+    position: relative;
+  }
+  .form-input {
+    padding-top: 15.335px;
+    padding-bottom: 15.335px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+
+  .form-square-icon-left {
+    position: absolute;
+    top: 16.665px;
+    left: 20px;
+  }
+}
+
+
+.logo-footer {
+  margin-right: auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+
+  
+@media (max-width:768px) {
+  .footer-p {
+    display: flex;
+    justify-content: flex-start !important;
+    margin-top: 23px;
+  
+  }
+
+
+
+  .mb-sm-7 {
+    margin-bottom: 30px;
+  }
+}
+
+.footer-bottom  {
+  background-color: $primary-200;
+}
+

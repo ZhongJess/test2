@@ -1,0 +1,64 @@
+.btn-big {
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+}
+
+@media (max-width:768px) {
+    .btn-big {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border: 1px solid #EAF0ED;
+    }
+
+}
+
+
+.my--10 {
+    margin-bottom: -15px;
+    margin-top: -15px;
+}
+
+.login {
+    background-color: #FFE180;
+    font-size: 24px;
+    font-weight: 600;
+    color: #3F5D45;
+    
+
+}
+
+
+
+
+
+// .form-square {
+//     background-color: #EAF0ED;
+    
+//     &.form-square-withicon {
+//       padding-left: 60px;
+//       position: relative;
+//     }
+//     .form-input {
+//       padding-top: 20px;
+//       padding-bottom: 20px;
+//       background-color: transparent;
+//       border: none;
+//       outline: none;
+//     }
+  
+//     .form-square-icon-left {
+//       position: absolute;
+//       top: 20px;
+//       left: 20px;
+//     }
+//   }
+
+
+  .text-color {
+    color: #EAF0ED;
+  }
+
+  .btn-brand-white {
+    background-color: white;
+  }

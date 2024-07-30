@@ -1,0 +1,112 @@
+
+.bg-cover-2 {
+    background-image: url(/images/餅乾巧克力湯匙.avif);
+    background-size: cover;
+    height: 420px;
+    background-position: center;
+    position: relative;
+
+   
+  
+  }
+
+  .bg-cover-2 .header-image-context {
+
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+  }
+
+  .my-6 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .bg-primary {
+    background-color: #3F5D45;
+  }
+
+
+  .list-group-item.active {
+    border: none;
+  }
+
+  
+
+
+.item-card {
+
+
+    .item-image4 {
+      background-image: url(/images/藍莓優格.avif);
+      height: 315px;
+      background-size: cover;
+      background-position: center center;
+      position: relative;
+  
+  }
+  .item-image5 {
+    background-image: url(/images/藍莓派.avif);
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+
+}
+.item-image6 {
+  background-image: url(/images/水果派.avif);
+  height: 315px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+}
+.item-image7 {
+  background-image: url(/images/草莓冰.avif);
+  height: 315px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+}
+
+
+}
+
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+
+.page-link {
+  color: #3F5D45;
+  padding: 16px 26px;
+}
+
+
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width:"768px") {
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  
+}
+
+
+.page-link.active, .active > .page-link {
+  z-index: 3;
+  color: #fff;
+  background-color: #3F5D45;
+  border-color: #3F5D45;
+  
+}

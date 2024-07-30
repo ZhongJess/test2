@@ -1,0 +1,380 @@
+
+.main-image {
+  background-image: url(/images/主頁第一張.avif);
+  background-size:cover;
+  height: 496px;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.custom-card-gp {
+  position: absolute;
+  top: 85%;
+  margin: 0 auto;
+  flex-wrap: nowrap;
+  display: flex;
+
+
+}
+
+
+.pd-0 {
+  padding: 0;
+}
+
+
+
+.bg-yellow, .bg-green, .bg-dark-green {
+  
+ 
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-height: 256px;
+  max-width: 260px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
+  overflow: hidden;
+  
+ }
+ 
+
+.bg-yellow::before {
+  content: "";
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  background: inherit;
+  filter: blur(4px);
+  background-image: url(/images/餅乾巧克力湯匙.avif);
+}
+
+.bg-green::before {
+  content: "";
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  background: inherit;
+  filter: blur(4px);
+  background-image: url(/images/派.avif);
+}
+
+.bg-dark-green::before {
+  content: "";
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  background: inherit;
+  filter: blur(4px);
+  background-image: url(/images/冰棒.avif);
+}
+
+
+
+
+.custom-card{
+  background-color: rgba(63, 93, 69, 0.8);
+  z-index: 1;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 118px;
+  padding-right: 118px;
+  color: #fff;
+}
+
+.custom-card-hover{
+  background-color:rgba(255, 225, 128, 0.8);
+  z-index: 1;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  padding-left: 118px;
+  padding-right: 118px;
+  color: rgb(63, 93, 69);
+
+}
+
+
+.card-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+}
+
+
+@media (max-width:768px) {
+
+  .custom-card-hover {
+    background-color: rgba(255, 225, 128, 0.8);
+    z-index: 1;
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 76px;
+    padding-right: 76px;
+    color: rgb(63, 93, 69);
+
+    
+    }
+
+
+    .custom-card {
+      background-color: rgba(63, 93, 69, 0.8);
+      z-index: 1;
+      padding-top: 63px;
+      padding-bottom: 63px;
+      padding-left: 76px;
+      padding-right: 76px;
+      color:  #fff;
+  
+      
+      }
+
+
+
+  .card-title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+  }
+    
+  
+
+  .bg-yellow, .bg-green, .bg-dark-green {
+  
+ 
+    padding-top: 63px;
+    padding-bottom: 63px;
+    padding-left: 0px;
+    padding-right:0px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    max-height: 250px;
+    max-width: 172px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid white;
+    overflow: hidden;
+    
+   }
+   
+
+.bg-yellow::before {
+  content: "";
+  height: 250px;
+  width: 170px;
+  position: absolute;
+  background: inherit;
+  filter: blur(4px);
+  background-image: url(/images/餅乾巧克力湯匙.avif);
+}
+
+.bg-green::before {
+  content: "";
+  height: 250px;
+  width: 170px;
+  position: absolute;
+  background: inherit;
+  filter: blur(4px);
+  background-image: url(/images/派.avif);
+}
+
+.bg-dark-green::before {
+  content: "";
+  height: 250px;
+  width: 170px;
+  position: absolute;
+  background: inherit;
+  filter: blur(4px);
+  background-image: url(/images/冰棒.avif);
+}
+
+}
+
+
+
+.my-md-10 {
+  margin-top: 105px;
+  margin-bottom: 60px;
+}
+
+.bg-primary-lighter {
+  background-color: #EAF0ED;
+ 
+}
+
+.py-70{
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+}
+.bg-cover {
+  background-image: url(/images/荷蘭鬆餅.avif);
+  background-size: cover;
+  height: 420px;
+  background-position: center;
+ 
+
+
+}
+
+.bg-cover-1 {
+  background-image: url(/images/水果優格.avif);
+  background-size: cover;
+  height: 420px;
+  background-position: center;
+
+
+
+}
+
+.break-vertical-block {
+
+  margin-top: -24px;
+  margin-bottom: -24px;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+
+
+.vertical-content p {
+  max-height: 280px;
+  color: #8DA291;
+  font-weight: 200;
+  line-height: 2.5;
+  font-family: "PingFang TC";
+}
+
+.section-intro-image {
+  min-height: 250px;
+
+
+  }
+
+// write-mode
+.writing-vertical {
+  writing-mode: vertical-rl;
+}
+
+.my-md-247 {
+  margin-top: 247px;
+  margin-bottom: 60px;
+}
+
+
+
+@media (max-width:768px) {
+  .my-md-247 {
+    margin-top: 165px;
+    margin-bottom: 0px;
+
+}
+
+.my-md-10 {
+  margin-top: 0px;
+  
+}
+
+.py-70 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.vertical-content{
+    line-height: 2.5;
+}
+.break-vertical-block{
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+
+}
+
+
+
+.writing-vertical {
+  writing-mode:  horizontal-tb;;
+}
+  
+}
+
+
+
+.item-card {
+  display: flex;
+  flex-direction: column;
+
+  }
+
+.item-image1 {
+  background-image: url(/images/甜甜圈.avif);
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.item-image2 {
+  background-image: url(/images/草莓蛋糕.avif);
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+.item-image3 {
+  background-image: url(/images/藍莓百香果.avif);
+    height: 315px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+
+.item-tag {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  background-color: #3F5D45;
+  writing-mode: vertical-lr;
+  padding: 15px 10px;
+  color: white;
+  letter-spacing: 5px;
+}
+
+
+.item-body {
+  border: 1px solid #EAF0ED;
+
+}
+
+.item-name {
+  border-right: 1px solid #EAF0ED;
+  padding-left: 19px;
+  padding-right: 19px;
+}
+
+.item-name, .item-price {
+  padding-top: 12.33px;
+  padding-bottom: 12.33px;
+  font-size: 20px;
+}
+
+.item-fav-icon {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+}
+
+

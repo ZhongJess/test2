@@ -1,0 +1,172 @@
+
+
+
+// 色系更改
+
+// scss-docs-start theme-color-variables
+$primary:       #3F5D45;
+$accent:        #FFE180;/*強調色系*/
+// $secondary:     $gray-600;
+// $success:       $green;
+$info:          #8DA291; /*p文字顏色深綠*/
+// $warning:       $yellow;
+// $danger:        $red;
+$light:         #EAF0ED; /*背景顏色淺綠*/
+// $dark:          $gray-900;
+// scss-docs-end theme-color-variables
+
+
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: (
+    "primary":    #3F5D45,
+    "accent":     #FFE180, 
+    // "secondary":  $secondary,
+    // "success":    $success,
+    "info":        #8DA291,
+    // "warning":    $warning,
+    // "danger":     $danger,
+    "light":      #EAF0ED,
+    // "dark":       $dark
+);
+
+// light theme color
+$primary-200: #EAF0ED;
+$primary-500: #8DA291;
+
+
+
+// options
+// hover按鈕懸停模式
+// $enable-hover-media-query:  false; // Deprecated, no longer affects any compiled CSS
+
+// paddingmargin間距
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem;
+$spacers: (
+  0: $spacer * 0,
+  1: $spacer * .625,
+  3: $spacer * 1.25,
+  4: $spacer * 2.5,
+  5: $spacer * 3.75,
+  6: $spacer * 5,
+  7: $spacer * 1.875,
+  8: $spacer * 10,
+  9: $spacer * 1,
+
+);
+
+
+// 字型字體大小
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji","PingFang TC";
+
+
+
+$font-size-base:              1rem;
+$h1-font-size:                $font-size-base * 3;
+$h2-font-size:                $font-size-base * 2.25;
+$h4-font-size:                $font-size-base * 1.5;
+$h6-font-size:                $font-size-base; 
+// // base=1rem=16px
+
+
+// // 字重
+// // 把h4footer的部分改400字重
+$headings-font-weight:        400;
+
+
+// // email送出鍵padding
+$custom-select-padding-y:           .375rem;
+$custom-select-padding-x:           .75rem;
+
+
+
+$input-btn-padding-y: 2rem;
+$input-btn-padding-x: 2rem;
+
+
+
+$navbar-padding-y:                  1.875rem;
+$navbar-nav-link-padding-x:         1.875rem;
+$navbar-nav-link-padding-y:         .5rem; 
+
+
+// // 漢堡選單padding
+$navbar-toggler-padding-x:          .1875rem;
+
+
+$navbar-light-color:                rgba(#3F5D45, .5); //rgba($black, .5);
+$navbar-light-hover-color:          rgba(#3F5D45, .7); //rgba($black, .7);
+$navbar-light-active-color:         rgba(#3F5D45, .9); //rgba($black, .9);
+
+
+$card-border-radius:                0; //$border-radius;
+
+
+$list-group-border-color:           #EAF0ED;
+$list-group-hover-bg:               #EAF0ED;
+$list-group-border-radius:          0; //$border-radius;
+$list-group-item-padding-y:         1rem; //.75rem;
+$list-group-active-color:           #3F5D45; //$component-active-color;
+$list-group-active-bg:              #EAF0ED; //$component-active-bg;
+$list-group-disabled-bg:            rgba(#e9ecef, .2);
+$list-group-action-color:           #3F5D45; 
+$list-group-action-active-bg:       rgba(#e9ecef, .2);
+
+
+
+$input-placeholder-color:               #EAF0ED;
+$input-border-radius-lg:                0;
+$input-bg:                              #EAF0ED;
+$input-line-height-lg:                  1.5;
+
+
+$input-btn-padding-y-lg:      1rem;
+$border-radius:               0; //.25rem;
+$border-radius-lg:            0; // .3rem;
+
+
+// // body背景顏色
+$body-color:                #3F5D45; 
+
+
+
+
+
+// // Grid breakpoints格線斷點
+
+// // Define the minimum dimensions at which your layout will change,
+// // adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+
+// // Grid containers
+
+// // Define the maximum width of `.container` for different screen sizes.
+
+// $container-max-widths: (
+//   sm: 375px,
+//   md: 720px,
+//   lg: 940px,
+//   xl: 1140px
+// );
+
+// // Grid columns
+// //
+// // Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12;
+$grid-gutter-width:           60px;
+
+
+
+// // 邊線
+$border-width:                1px;
+$border-color:                #EAF0ED;

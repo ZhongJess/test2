@@ -1,0 +1,78 @@
+.process-steps {
+    $circle-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .step-circle {
+      height: $circle-size;
+      width: $circle-size;
+      border: 1px solid #8DA291;
+      border-radius: $circle-size;
+      position: relative;
+      background-color: #3F5D45;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: #EAF0ED;
+    }
+  
+    .step-circle.active {
+      
+      &:after {
+        content: "";
+        height: 14.725px;
+        width: 14.725px;
+        display: block;
+        background-color: #EAF0ED;
+        border-radius: $circle-size;
+      }
+    }
+  
+  
+
+  // 往內縮15px
+.negative-row-margin {
+    margin-left: -15px;  
+    margin-right: -15px;
+
+  }
+
+
+  .my-lg-44 {
+    margin-top: 44px;
+    margin-bottom: 44px;
+
+  }
+
+
+  
+  }
+
+
+//   表格加高
+  .lastname {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+ 
+  .negative-row-margin .btn {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+
+.card .heavy600{
+    font-size: 20px;
+    font-weight: 600;
+}

@@ -1,0 +1,190 @@
+
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+
+
+// Required
+// 把自己客製化過的變數放在前面
+// 若沒有改到的變數可以吃後面bootstrap原有的變數default
+@import './helper/variable';
+
+
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Optional Bootstrap components here
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+
+
+// Default variable overrides
+// $body-bg: #000;
+// $body-color: #111;
+
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+// etc
+
+
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+
+@import './pages/index.scss';
+@import './pages/product.scss';
+@import './pages/login.scss';
+@import './pages/deliver.scss';
+@import './pages/cart.scss';
+@import './pages/pay.scss';
+@import './pages/receipt.scss';
+@import './pages/success.scss';
+
+
+
+.navbar-expand-md .navbar-collapse {
+
+  flex-direction: row-reverse;
+  
+  }
+
+
+
+
+// .nav-item ,.nav-link {
+//     color:#3F5D45;
+// }
+
+// .margin-67 {
+//     margin-right: 67px;
+//   }
+
+
+
+// @media (max-width: 768px) {
+
+//     .footer1 ,.footer-top form {
+//         margin: 0 auto;
+        
+//     }
+
+//     .footer-top form {
+//         margin-top: -30px;
+//         margin-bottom: 30px;
+//     }
+
+
+//     .d-md-none2 {
+//         display: none;
+//     }
+
+//     .footer-bottom .today {
+//         display: none;
+//        }
+
+
+//     .footer-bottom .text-color {
+//         margin-right: auto;
+//     }
+
+
+// }
+ 
+
+// 漢堡選單外框不顯示
+.navbar-toggler {
+    border: none !important;
+  }
+  
+
+//   .bg-primary {
+//     background-color: #3F5D45 !important;
+//   }  
+
+// .bg-primary-lighter{
+//     background-color: #EAF0ED !important;
+// }
+
+// .btn-brand-light{
+//     background-color: #fff !important;
+// }
+
+// .btn {
+//     padding-left: 15px;
+//     padding-right: 15px;
+//   }
+
+
+
+.text-primary-lighter {
+    color: #EAF0ED;
+}
+
+// .text-primary {
+//     color: #3F5D45 !important ;
+// }
+
+
+// .text-primary-light {
+//     color: #8DA291 !important ;
+// }
+
+
+// .border-primary-lighter {
+//     border-color: #EAF0ED !important;
+
+// }
+
+
+// .mb-md-60 {
+//     margin-bottom: 60px;
+// }
+
+
+
+
+// @media (max-width:576px) {
+//     .mb-md-60 {
+//         margin-bottom: -60px;
+//     }
+
+    
+// }
+
+
+
+.add-cta {
+    font-size: 24px;
+    font-weight: 600;
+    color: #3F5D45;
+    background-color: #EAF0ED;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+    
+//   }
+
+
+
+
+// 把row的pd拿掉看能否在576時全滿
+// 更改變數顏色和間距
+// margin top bottom 上下都要在家 不然會排不出來
+
+
+
+@media  (max-width:768px){
+  .mx-md-n7 {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+  
+}
+
+
