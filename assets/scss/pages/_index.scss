@@ -1,6 +1,6 @@
 
 .main-image {
-  background-image: url(/images/主頁第一張.avif);
+  background-image: url(/assets/images/主頁第一張.avif);
   background-size:cover;
   height: 496px;
   background-position: center;
@@ -56,7 +56,7 @@
   position: absolute;
   background: inherit;
   filter: blur(4px);
-  background-image: url(/images/餅乾巧克力湯匙.avif);
+  background-image: url(/assets/images/餅乾巧克力湯匙.avif);
 }
 
 .bg-green::before {
@@ -66,7 +66,7 @@
   position: absolute;
   background: inherit;
   filter: blur(4px);
-  background-image: url(/images/派.avif);
+  background-image: url(/assets/images/派.avif);
 }
 
 .bg-dark-green::before {
@@ -76,7 +76,7 @@
   position: absolute;
   background: inherit;
   filter: blur(4px);
-  background-image: url(/images/冰棒.avif);
+  background-image: url(/assets/images/冰棒.avif);
 }
 
 
@@ -175,7 +175,7 @@
   position: absolute;
   background: inherit;
   filter: blur(4px);
-  background-image: url(/images/餅乾巧克力湯匙.avif);
+  background-image: url(/assets/images/餅乾巧克力湯匙.avif);
 }
 
 .bg-green::before {
@@ -185,7 +185,7 @@
   position: absolute;
   background: inherit;
   filter: blur(4px);
-  background-image: url(/images/派.avif);
+  background-image: url(/assets/images/派.avif);
 }
 
 .bg-dark-green::before {
@@ -195,7 +195,7 @@
   position: absolute;
   background: inherit;
   filter: blur(4px);
-  background-image: url(/images/冰棒.avif);
+  background-image: url(/assets/images/冰棒.avif);
 }
 
 }
@@ -218,7 +218,7 @@
 
 }
 .bg-cover {
-  background-image: url(/images/荷蘭鬆餅.avif);
+  background-image: url(/assets/images/荷蘭鬆餅.avif);
   background-size: cover;
   height: 420px;
   background-position: center;
@@ -228,7 +228,7 @@
 }
 
 .bg-cover-1 {
-  background-image: url(/images/水果優格.avif);
+  background-image: url(/assets/images/水果優格.avif);
   background-size: cover;
   height: 420px;
   background-position: center;
@@ -319,7 +319,7 @@
   }
 
 .item-image1 {
-  background-image: url(/images/甜甜圈.avif);
+  background-image: url(/assets/images/甜甜圈.avif);
     height: 315px;
     background-size: cover;
     background-position: center center;
@@ -327,14 +327,14 @@
 }
 
 .item-image2 {
-  background-image: url(/images/草莓蛋糕.avif);
+  background-image: url(/assets/images/草莓蛋糕.avif);
     height: 315px;
     background-size: cover;
     background-position: center center;
     position: relative;
 }
 .item-image3 {
-  background-image: url(/images/藍莓百香果.avif);
+  background-image: url(/assets/images/藍莓百香果.avif);
     height: 315px;
     background-size: cover;
     background-position: center center;
