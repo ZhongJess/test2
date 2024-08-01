@@ -5,51 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pay</title>
-    <script type="module" crossorigin src="/test2/assets/main-b49d3f6e.js"></script>
-    <link rel="stylesheet" href="/test2/assets/main-1c26cd2b.css">
   </head>
   <body>
-    
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-
-
-<div class="navbar navbar-expand-md ">
-<div class="container">
-    <button class="navbar-toggler  d-md-none d-flex align-items-center" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="material-symbols-outlined">
-          menu
-        </span>
-      </button>
-    <a class="navbar-brand" href="index.html">
-    <img class="d-md-none2 d-md-inline " src="/test2/assets/logo-8bd6e056.svg" alt="" height="40">
-    <img src="/test2/assets/logotype-b580da93.svg" alt="" height="26.6">
-    </a>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="navbar-nav d-flex align-items-center mright-79">
-        <a class="nav-item nav-link"  href="index.html"><li>首頁</li></a>
-        <a class="nav-item nav-link"  href="product.html"><li>甜點</li></a>
-        <a class="nav-item nav-link margin-67"  href="login.html"><li>登入</li></a>
-    </div>   
-  </div> 
-        <a class="cart nav-item nav-link material-symbols-outlined"  href="cart.html" >shopping_cart</a>
-    
-    
-</div>
-    
-
-    
-   
-        
-    
-
-</div>
+    <%- include('./layout/header'); -%>
    
 
 
     <section class="container my-md-5 ">
       <div class="row g-3">
         <div class="col-lg-8">
-          <div class="negative-row-margin mx-lg-0">
+          <div class="negative-row-margin mx-lg-0 mx-n30">
             <div class="p-5 bg-primary text-primary-lighter">
               <div class="row mb-5">
                 <div class="col-6">
@@ -123,7 +88,7 @@
         </div>
         
 
-          <div class="d-grid negative-row-margin mx-lg-0">
+          <div class="d-grid negative-row-margin mx-lg-0 mx-n30">
             <a href="receipt.html" class="btn btn-accent py-3 text-primary">下一步</a>
           </div>
         </div>
@@ -153,7 +118,7 @@
             <div class="card-body carts">
 
               <div class="d-flex mb-3">
-                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/test2/assets/草莓優格-baa47fcb.avif)"></div>
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/assets/images/草莓優格.avif)"></div>
                 <div class="d-flex flex-fill  align-items-center justify-content-evenly">
                   <div class=" text-primary-light">
                     <span>焦糖馬卡龍 (2)</span><br>
@@ -162,7 +127,7 @@
                 </div>
               </div>
               <div class="d-flex mb-3">
-                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/test2/assets/草莓蛋糕-76125656.avif)"></div>
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/assets/images/草莓蛋糕.avif)"></div>
                 <div class="d-flex flex-fill  align-items-center justify-content-evenly">
                   <div class=" text-primary-light">
                     <span>焦糖馬卡龍 (2)</span><br>
@@ -171,7 +136,7 @@
                 </div>
               </div>
               <div class="d-flex">
-                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/test2/assets/藍莓派-bc80ff0b.avif)"></div>
+                <div class="cart-image cart-image-sm mr-3" style="background-image: url(/assets/images/藍莓派.avif)"></div>
                 <div class="d-flex flex-fill  align-items-center justify-content-evenly">
                   <div class=" text-primary-light">
                     <span>焦糖馬卡龍 (2)</span><br>
@@ -193,71 +158,8 @@
 
 
 
-    <footer class="footer ">
+    <%- include('./layout/footer'); -%>
 
-        <section class="py-7 bg-primary">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="mb-sm-7 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start mb-md-0">
-                  <img src="/test2/assets/logo-light-da83e04b.svg" width="40" height="40" alt="">
-                  <span class="mx-3 text-white h4  mb-0">訂閱你我的甜蜜郵件</span>
-                </div>
-                <div class="col-md-5">
-                  <div class="form-square form-square-withicon d-flex justify-content-between">
-                    <label for="subscription" class="material-symbols-outlined form-square-icon-left">
-                      email
-                    </label>
-                    <input type="email" id="subscription" class="form-input w-100">
-                    <button class="btn btn-accent text-primary btn-lg d-flex align-items-center">
-                      <i class="material-symbols-outlined">
-                        arrow_forward
-                      </i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-       
-
-            <div class="footer-bottom ">
-                <div class="container ">
-                    <div class="row justify-content-center pt-6">
-                        <div class="col-md-5 d-flex flex-column justify-content-between ">
-                        <img class="logo-footer"  src="/test2/assets/logotype-sm-dark-54beb6a2.svg" alt="" height="26.6">
-                        <ul class="list-unstyled ">
-                            <li>07-1234-5678</li>
-                            <li>sweetaste@email.com</li>
-                            <li>800 高雄市新興區幸福路 520 號</li>
-                        </ul>
-                        </div>
-
-                        <div class="col-md-5 text-right d-none d-md-block">
-                        <img class="today" src="/test2/assets/sm-今天是個吃甜點的好日子-1fff0e49.svg" alt="" height="218.69">
-
-                          </div>
-
-                        <div class="row justify-content-center my-7"> 
-                          <div class="col-md-5 pd-0">
-                          <a href="#"><img src="/images/ic-line@.svg" alt="" width="32" height="32"></a>
-                          <a href="#"><img src="/images/ic-facebook.svg" alt=""  width="32" height="32"></a>
-                          </div>
-                          <div class=" col-md-5 mt-2 pd-0 justify-content-end d-flex  align-items-center footer-p">© 2018 Sweetaste* All Rights Reserved</div>
-                        </div>  
-
-                     
-                      
-                    </div>
-                        </div>
-                    </div>    
-
-                </div>
-            </div>  
-    
-
-
-
-</footer>
-    
+    <script type="module" src="../main.js"></script>
   </body>
 </html>
