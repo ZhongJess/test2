@@ -1,4 +1,8 @@
 
+html, body {
+  overflow-x: hidden;
+}
+
 // Required
 @import "../node_modules/bootstrap/scss/functions";
 
@@ -178,10 +182,10 @@
     margin-right: -30px;
   }
   
-  .mx-n30 {
-    margin-left: -30px;
-    margin-right: -30px;
-  }
+  // .mx-n30 {
+  //   margin-left: -30px;
+  //   margin-right: -30px;
+  // }
 
 
   .mx-n10 {

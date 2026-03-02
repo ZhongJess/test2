@@ -1,106 +1,95 @@
 
 .main-image {
   background-image: url(/assets/images/主頁第一張.avif);
-  background-size:cover;
+  background-size: cover;
   height: 496px;
   background-position: center;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
+  padding-left: 0;
+  padding-right: 0;
 }
 
+// Desktop: centered compact group
 .custom-card-gp {
   position: absolute;
   top: 85%;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
   flex-wrap: nowrap;
   display: flex;
-
-
+  margin: 0;
 }
 
+// Override Bootstrap col inside card group
+.custom-card-gp > [class*="col-"] {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none;
+  padding: 0;
+}
 
 .pd-0 {
   padding: 0;
 }
 
 
-
+// Desktop card containers — original compact size
 .bg-yellow, .bg-green, .bg-dark-green {
-  
- 
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 100px;
-  padding-right: 100px;
+  width: 260px;
+  height: 256px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
-  max-height: 256px;
-  max-width: 260px;
   background-size: cover;
   background-position: center;
-  border: 1px solid white;
   overflow: hidden;
-  
- }
- 
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
 
-.bg-yellow::before {
-  content: "";
-  height: 250px;
-  width: 250px;
-  position: absolute;
-  background: inherit;
-  filter: blur(4px);
+.bg-dark-green {
+  border-right: none;
+}
+
+.bg-yellow {
   background-image: url(/assets/images/餅乾巧克力湯匙.avif);
 }
 
-.bg-green::before {
-  content: "";
-  height: 250px;
-  width: 250px;
-  position: absolute;
-  background: inherit;
-  filter: blur(4px);
+.bg-green {
   background-image: url(/assets/images/派.avif);
 }
 
-.bg-dark-green::before {
-  content: "";
-  height: 250px;
-  width: 250px;
-  position: absolute;
-  background: inherit;
-  filter: blur(4px);
+.bg-dark-green {
   background-image: url(/assets/images/冰棒.avif);
 }
 
 
-
-
-.custom-card{
+.custom-card {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   background-color: rgba(63, 93, 69, 0.8);
   z-index: 1;
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 118px;
-  padding-right: 118px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
-.custom-card-hover{
-  background-color:rgba(255, 225, 128, 0.8);
+.custom-card-hover {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(255, 225, 128, 0.8);
   z-index: 1;
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 118px;
-  padding-right: 118px;
   color: rgb(63, 93, 69);
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 
@@ -108,96 +97,48 @@
   font-size: 24px;
   text-align: center;
   font-weight: 600;
+  writing-mode: vertical-rl;
 }
 
 
-@media (max-width:768px) {
-
-  .custom-card-hover {
-    background-color: rgba(255, 225, 128, 0.8);
-    z-index: 1;
-    padding-top: 63px;
-    padding-bottom: 63px;
-    padding-left: 76px;
-    padding-right: 76px;
-    color: rgb(63, 93, 69);
-
-    
-    }
-
-
-    .custom-card {
-      background-color: rgba(63, 93, 69, 0.8);
-      z-index: 1;
-      padding-top: 63px;
-      padding-bottom: 63px;
-      padding-left: 76px;
-      padding-right: 76px;
-      color:  #fff;
-  
-      
-      }
-
-
+@media (max-width: 768px) {
+  .bg-yellow, .bg-green, .bg-dark-green {
+    width: 172px;
+    height: 200px;
+  }
 
   .card-title {
     font-size: 20px;
-    text-align: center;
     font-weight: 400;
   }
-    
-  
+}
+
+// Mobile: full-width flex-fill
+@media (max-width: 576px) {
+  .main-image {
+    height: 280px;
+  }
+
+  .custom-card-gp {
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  .custom-card-gp > [class*="col-"] {
+    flex: 1;
+    width: auto;
+  }
 
   .bg-yellow, .bg-green, .bg-dark-green {
-  
- 
-    padding-top: 63px;
-    padding-bottom: 63px;
-    padding-left: 0px;
-    padding-right:0px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    max-height: 250px;
-    max-width: 172px;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid white;
-    overflow: hidden;
-    
-   }
-   
+    width: 100%;
+    height: 200px;
+  }
 
-.bg-yellow::before {
-  content: "";
-  height: 250px;
-  width: 170px;
-  position: absolute;
-  background: inherit;
-  filter: blur(4px);
-  background-image: url(/assets/images/餅乾巧克力湯匙.avif);
-}
-
-.bg-green::before {
-  content: "";
-  height: 250px;
-  width: 170px;
-  position: absolute;
-  background: inherit;
-  filter: blur(4px);
-  background-image: url(/assets/images/派.avif);
-}
-
-.bg-dark-green::before {
-  content: "";
-  height: 250px;
-  width: 170px;
-  position: absolute;
-  background: inherit;
-  filter: blur(4px);
-  background-image: url(/assets/images/冰棒.avif);
-}
-
+  .my-md-247 {
+    margin-top: 0;
+  }
 }
 
 
@@ -209,22 +150,18 @@
 
 .bg-primary-lighter {
   background-color: #EAF0ED;
- 
 }
 
-.py-70{
+.py-70 {
   padding-top: 70px;
   padding-bottom: 70px;
-
 }
+
 .bg-cover {
   background-image: url(/assets/images/荷蘭鬆餅.avif);
   background-size: cover;
   height: 420px;
   background-position: center;
- 
-
-
 }
 
 .bg-cover-1 {
@@ -232,20 +169,14 @@
   background-size: cover;
   height: 420px;
   background-position: center;
-
-
-
 }
 
 .break-vertical-block {
-
   margin-top: -24px;
   margin-bottom: -24px;
   padding-left: 0px;
   padding-right: 0px;
-
 }
-
 
 
 .vertical-content p {
@@ -258,9 +189,7 @@
 
 .section-intro-image {
   min-height: 250px;
-
-
-  }
+}
 
 // write-mode
 .writing-vertical {
@@ -273,41 +202,33 @@
 }
 
 
-
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .my-md-247 {
     margin-top: 165px;
     margin-bottom: 0px;
+  }
 
-}
+  .my-md-10 {
+    margin-top: 0px;
+  }
 
-.my-md-10 {
-  margin-top: 0px;
-  
-}
+  .py-70 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-.py-70 {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-}
-
-.vertical-content{
+  .vertical-content {
     line-height: 2.5;
-}
-.break-vertical-block{
-  margin-top: 0px;
-  margin-bottom: 0px;
+  }
 
+  .break-vertical-block {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
-}
-
-
-
-.writing-vertical {
-  writing-mode:  horizontal-tb;;
-}
-  
+  .writing-vertical {
+    writing-mode: horizontal-tb;
+  }
 }
 
 
@@ -315,30 +236,30 @@
 .item-card {
   display: flex;
   flex-direction: column;
-
-  }
+}
 
 .item-image1 {
   background-image: url(/assets/images/甜甜圈.avif);
-    height: 315px;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
+  height: 315px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 
 .item-image2 {
   background-image: url(/assets/images/草莓蛋糕.avif);
-    height: 315px;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
+  height: 315px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
+
 .item-image3 {
   background-image: url(/assets/images/藍莓百香果.avif);
-    height: 315px;
-    background-size: cover;
-    background-position: center center;
-    position: relative;
+  height: 315px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 
 
@@ -356,7 +277,6 @@
 
 .item-body {
   border: 1px solid #EAF0ED;
-
 }
 
 .item-name {
@@ -376,10 +296,6 @@
   top: 20px;
   right: 22px;
 }
-
-
-
-
 
 
 
