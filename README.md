@@ -4,7 +4,7 @@
 
 ## Demo
 
-[GitHub Pages](https://zhongjess.github.io/Sweetery/)
+https://zhongjess.github.io/Sweetery/
 
 ## 技術棧
 
